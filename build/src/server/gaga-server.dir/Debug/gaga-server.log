@@ -1,0 +1,26 @@
+﻿生成启动时间为 2017/2/28 15:40:46。
+     1>项目“D:\bbr3\server\gaga\build\src\server\gaga-server.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\bbr3\server\gaga\lib\protobuf-lite" /ID:\bbr3\server\gaga\lib\raknet\include\RakNet /ID:\bbr3\server\gaga\src\server /ID:\bbr3\server\gaga\src\server\..\common /ID:\bbr3\server\gaga\src\server\..\proto\protomsg /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"gaga-server.dir\Debug\\" /Fd"gaga-server.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt D:\bbr3\server\gaga\src\server\gaga_client_agent.cpp D:\bbr3\server\gaga\src\server\gaga_room.cpp D:\bbr3\server\gaga\src\server\gaga_server.cpp D:\bbr3\server\gaga\src\server\main.cpp
+         gaga_client_agent.cpp
+         gaga_room.cpp
+     1>D:\bbr3\server\gaga\src\server\gaga_room.cpp(91): warning C4244: “=”: 从“uint64_t”转换到“uint32_t”，可能丢失数据
+     1>D:\bbr3\server\gaga\src\server\gaga_room.cpp(109): warning C4244: “=”: 从“uint64_t”转换到“uint32_t”，可能丢失数据
+         gaga_server.cpp
+         main.cpp
+         正在生成代码...
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\bbr3\server\gaga\build\src\server\Debug\gaga-server.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\..\lib\raknet\Lib\LibStatic\Debug\RakNetLibStatic.lib ..\proto\Debug\protomsg.lib ws2_32.lib "..\..\lib\protobuf-lite\Debug\libprotobuf-lite.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/bbr3/server/gaga/build/src/server/Debug/gaga-server.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/bbr3/server/gaga/build/src/server/Debug/gaga-server.lib" /MACHINE:X86 /SAFESEH  /machine:X86 "gaga-server.dir\Debug\gaga_client_agent.obj"
+         "gaga-server.dir\Debug\gaga_player.obj"
+         "gaga-server.dir\Debug\gaga_room.obj"
+         "gaga-server.dir\Debug\gaga_server.obj"
+         "gaga-server.dir\Debug\gaga_timer.obj"
+         "gaga-server.dir\Debug\main.obj"
+         "gaga-server.dir\Debug\task_pool.obj"
+         "gaga-server.dir\Debug\gaga_util.obj"
+         gaga-server.vcxproj -> D:\bbr3\server\gaga\build\src\server\Debug\gaga-server.exe
+     1>已完成生成项目“D:\bbr3\server\gaga\build\src\server\gaga-server.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.81

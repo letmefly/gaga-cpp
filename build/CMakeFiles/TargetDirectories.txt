@@ -1,0 +1,9 @@
+D:/bbr3/server/gaga/build/CMakeFiles/ALL_BUILD.dir
+D:/bbr3/server/gaga/build/CMakeFiles/ZERO_CHECK.dir
+D:/bbr3/server/gaga/build/lib/raknet/CMakeFiles/ALL_BUILD.dir
+D:/bbr3/server/gaga/build/lib/raknet/Lib/LibStatic/CMakeFiles/RakNetLibStatic.dir
+D:/bbr3/server/gaga/build/lib/raknet/Lib/LibStatic/CMakeFiles/ALL_BUILD.dir
+D:/bbr3/server/gaga/build/lib/protobuf-lite/CMakeFiles/libprotobuf-lite.dir
+D:/bbr3/server/gaga/build/src/proto/CMakeFiles/protomsg.dir
+D:/bbr3/server/gaga/build/src/server/CMakeFiles/gaga-server.dir
+D:/bbr3/server/gaga/build/src/client/CMakeFiles/gaga-client.dir

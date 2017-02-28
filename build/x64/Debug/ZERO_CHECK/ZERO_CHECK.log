@@ -1,0 +1,23 @@
+﻿生成启动时间为 2017/2/10 11:21:02。
+     1>项目“D:\bbr3\server\gaga\build\ZERO_CHECK.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/lib/raknet/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/lib/raknet/Lib/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/lib/raknet/Lib/LibStatic/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/lib/protobuf-lite/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/src/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/bbr3/server/gaga/build/src/proto/CMakeFiles/generate.stamp is up-to-date.
+         CMake is re-running because D:/bbr3/server/gaga/build/src/server/CMakeFiles/generate.stamp is out-of-date.
+           the file 'D:/bbr3/server/gaga/src/server/CMakeLists.txt'
+           is newer than 'D:/bbr3/server/gaga/build/src/server/CMakeFiles/generate.stamp.depend'
+           result='-1'
+         -- Configuring done
+         -- Generating done
+         -- Build files have been written to: D:/bbr3/server/gaga/build
+     1>已完成生成项目“D:\bbr3\server\gaga\build\ZERO_CHECK.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.08

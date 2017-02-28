@@ -1,0 +1,135 @@
+package proto;
+option optimize_for = LITE_RUNTIME;
+
+enum ErrorCode_t {
+	CODE_OK = 0;
+	CODE_ROOM_NOT_EXIST = 1;
+	CODE_ROOM_PW_NOT_RIGHT = 2;
+	CODE_ROOM_FULL = 3;
+	NEWS = 4;
+	PRODUCTS = 5;
+	VIDEO = 6;
+}
+
+enum GameMsgId_t {
+	MSG_RESERVE = 135;
+	MSG_LOGIN_REQ = 136;
+	MSG_LOGIN_ACK = 137;
+	MSG_LIST_ROOM_REQ = 138;
+	MSG_LIST_ROOM_ACK = 139;
+	MSG_CREATE_ROOM_REQ = 140;
+	MSG_CREATE_ROOM_ACK = 141;
+	MSG_JOIN_ROOM_REQ = 142;
+	MSG_JOIN_ROOM_ACK = 143;
+	MSG_PLAYER_LIST_NTF = 144;
+	MSG_ENTER_GAME_NTF = 145;
+	MSG_ENTER_GAME_OK_REQ = 146;
+	MSG_START_RACE_NTF = 147; 
+	MSG_LOGIC_FRAME_NTF = 148;
+}
+
+enum GameCommandType_t {
+	CMD_STEER = 1;
+}
+
+message User_t {
+	optional string userid = 1;
+	optional string nickname = 2;
+}
+
+message Room_t {
+	optional int32 room_no = 1;
+	optional string desp = 2;
+}
+
+message Player_t {
+	optional int32 playerid = 1;
+	optional string userid = 2;
+	optional string car_name = 3;
+	optional int32 is_free = 4;
+	optional int32 is_owned = 5;
+	optional int32 stage = 6;
+	optional string decal = 7;
+	optional string decal_color = 8;
+	optional string driver_name = 9;
+	optional string driver_type = 10;
+	optional int32 accel = 11;
+	optional int32 speed = 12;
+	optional int32 handling = 13;
+	optional int32 tough = 14;
+	optional int32 is_gold = 15;
+	optional int32 min_stage = 16;
+	optional int32 max_stage = 17;
+	optional string paint_color = 18;
+}
+
+message GameCommand_t {
+	optional int32 command_type = 1;
+	optional int32 playerid = 2;
+	optional int32 intvar1 = 3;
+	optional int32 intvar2 = 4;
+	optional int32 intvar3 = 5;
+	optional string strvar1 = 6;
+	optional string strvar2 = 7;
+	optional string strvar3 = 8;
+}
+
+message Login_req {
+	optional User_t userinfo = 1;
+}
+
+message Login_ack {
+	optional ErrorCode_t error_code = 1;
+}
+
+message ListRoom_req {
+	optional int32 offset = 1;
+}
+
+message ListRoom_ack {
+	optional ErrorCode_t error_code = 1;
+	repeated Room_t room_list = 2;
+}
+
+message CreateRoom_req {
+	optional string userid = 1;
+	optional string room_password = 2;
+}
+
+message CreateRoom_ack {
+	optional ErrorCode_t error_code = 1;
+}
+
+message JoinRoom_req {
+	optional string userid = 1;
+	optional string room_password = 2;
+	optional int32 room_no = 3;
+	optional Player_t playerinfo = 4;
+}
+
+message JoinRoom_ack {
+	optional ErrorCode_t error_code = 1;
+	optional int32 playerid = 2;
+}
+
+message PlayerList_ntf {
+	repeated Player_t player_list = 1;
+}
+
+message EnterGame_ntf {
+	repeated Player_t player_list = 1;
+}
+
+message EnterGameOk_req {
+	optional int32 playerid = 1;
+}
+
+message StartRace_ntf {
+	
+}
+
+message LogicFrame_ntf {
+	optional int32 frame_no = 1;
+	repeated GameCommand_t command_list = 2;
+}
+

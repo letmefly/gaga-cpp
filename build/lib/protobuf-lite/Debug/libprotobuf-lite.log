@@ -1,0 +1,150 @@
+﻿生成启动时间为 2017/2/21 16:28:04。
+     1>项目“D:\bbr3\server\gaga\build\lib\protobuf-lite\libprotobuf-lite.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>CustomBuild:
+         Building Custom Rule D:/bbr3/server/gaga/lib/protobuf-lite/CMakeLists.txt
+         CMake does not need to re-run because D:\bbr3\server\gaga\build\lib\protobuf-lite\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\bbr3\server\gaga\lib\protobuf-lite" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\extension_set.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\generated_message_util.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\message_lite.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\repeated_field.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\wire_format_lite.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\atomicops_internals_x86_msvc.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\once.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\stringprintf.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\io\coded_stream.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\io\zero_copy_stream.cc" "D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\io\zero_copy_stream_impl_lite.cc"
+         extension_set.cc
+     1>F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(785): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<const Element[],Element[]>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=google::protobuf::uint64 []
+         ,            Element=google::protobuf::uint64
+         ,            _InIt=const google::protobuf::uint64 []
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(784): 编译类 模板 成员函数“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(777): 参见对正在编译的函数 模板 实例化“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(777): 参见对正在编译的类 模板 实例化“google::protobuf::internal::ElementCopier<Element,false>”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(776): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(677): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(303): 参见对正在编译的函数 模板 实例化“bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)”的引用
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+         generated_message_util.cc
+         message_lite.cc
+         repeated_field.cc
+         wire_format_lite.cc
+     1>F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(785): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<const Element[],Element[]>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=google::protobuf::uint64 []
+         ,            Element=google::protobuf::uint64
+         ,            _InIt=const google::protobuf::uint64 []
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(784): 编译类 模板 成员函数“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(777): 参见对正在编译的函数 模板 实例化“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(777): 参见对正在编译的类 模板 实例化“google::protobuf::internal::ElementCopier<Element,false>”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(776): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(771): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(770): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(757): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(749): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)”时
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(631): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)”的引用
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(590): 编译类 模板 成员函数“int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const”时
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(270): 参见对正在编译的函数 模板 实例化“int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const”的引用
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(250): 参见对正在编译的类 模板 实例化“google::protobuf::RepeatedField<google::protobuf::uint64>”的引用
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(303): 参见对正在编译的函数 模板 实例化“bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)”的引用
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+         atomicops_internals_x86_msvc.cc
+         common.cc
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(92): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(168): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(169): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(170): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(171): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(172): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(173): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : 参见“_snprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\common.cc(377): warning C4018: “<”: 有符号/无符号不匹配
+         once.cc
+         stringprintf.cc
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\stringprintf.cc(66): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(337) : 参见“vsnprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\stringprintf.cc(80): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(337) : 参见“vsnprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\stringprintf.cc(97): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(337) : 参见“vsnprintf”的声明
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\stubs\stringprintf.cc(152): warning C4018: “<”: 有符号/无符号不匹配
+         coded_stream.cc
+         zero_copy_stream.cc
+         zero_copy_stream_impl_lite.cc
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\io\zero_copy_stream_impl_lite.cc(157): warning C4018: “<”: 有符号/无符号不匹配
+     1>D:\bbr3\server\gaga\lib\protobuf-lite\google\protobuf\io\zero_copy_stream_impl_lite.cc(177): warning C4018: “<=”: 有符号/无符号不匹配
+         正在生成代码...
+       Lib:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\bbr3\client\code\VectorEngine5\Win32\Purple\Debug\libprotobuf-lite.lib" /NOLOGO  /machine:x64 Debug\extension_set.obj
+         Debug\generated_message_util.obj
+         Debug\message_lite.obj
+         Debug\repeated_field.obj
+         Debug\wire_format_lite.obj
+         Debug\atomicops_internals_x86_msvc.obj
+         Debug\common.obj
+         Debug\once.obj
+         Debug\stringprintf.obj
+         Debug\coded_stream.obj
+         Debug\zero_copy_stream.obj
+         Debug\zero_copy_stream_impl_lite.obj
+     1>Debug\extension_set.obj : fatal error LNK1112: 模块计算机类型“X86”与目标计算机类型“x64”冲突
+     1>已完成生成项目“D:\bbr3\server\gaga\build\lib\protobuf-lite\libprotobuf-lite.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:05.63

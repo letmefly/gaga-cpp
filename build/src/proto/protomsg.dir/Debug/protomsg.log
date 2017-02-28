@@ -1,0 +1,64 @@
+﻿生成启动时间为 2017/2/28 10:31:14。
+     1>项目“D:\bbr3\server\gaga\build\src\proto\protomsg.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\bbr3\server\gaga\lib\protobuf-lite" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"protomsg.dir\Debug\\" /Fd"protomsg.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt D:\bbr3\server\gaga\src\proto\protomsg\GameMsg.pb.cc
+         GameMsg.pb.cc
+     1>F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(785): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<const Element[],Element[]>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=google::protobuf::uint64 []
+         ,            Element=google::protobuf::uint64
+         ,            _InIt=const google::protobuf::uint64 []
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(784): 编译类 模板 成员函数“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(777): 参见对正在编译的函数 模板 实例化“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element [],const Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(777): 参见对正在编译的类 模板 实例化“google::protobuf::internal::ElementCopier<Element,false>”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(776): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(771): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element [],const Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(770): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(757): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element [],Element [],int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(749): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)”时
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(631): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)”的引用
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/repeated_field.h(590): 编译类 模板 成员函数“int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const”时
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(270): 参见对正在编译的函数 模板 实例化“int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const”的引用
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(250): 参见对正在编译的类 模板 实例化“google::protobuf::RepeatedField<google::protobuf::uint64>”的引用
+                 D:\bbr3\server\gaga\lib\protobuf-lite\google/protobuf/wire_format_lite_inl.h(303): 参见对正在编译的函数 模板 实例化“bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)”的引用
+                 F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+       Lib:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\bbr3\server\gaga\build\src\proto\Debug\protomsg.lib" /NOLOGO  /machine:X86 protomsg.dir\Debug\GameMsg.pb.obj
+         protomsg.vcxproj -> D:\bbr3\server\gaga\build\src\proto\Debug\protomsg.lib
+     1>已完成生成项目“D:\bbr3\server\gaga\build\src\proto\protomsg.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.18

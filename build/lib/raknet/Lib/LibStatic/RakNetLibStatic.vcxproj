@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{70E5DC95-7918-3C13-B7BC-94482D3BEE5C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>RakNetLibStatic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RakNetLibStatic.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RakNetLibStatic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RakNetLibStatic.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RakNetLibStatic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RakNetLibStatic.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RakNetLibStatic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RakNetLibStatic.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RakNetLibStatic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>LIBCD.lib LIBCMTD.lib MSVCRT.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>LIBCD.lib LIBCMTD.lib MSVCRT.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>LIBCD.lib LIBCMTD.lib MSVCRT.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\bbr3\server\gaga\lib\raknet\Source;D:\bbr3\server\gaga\lib\raknet\DependentExtensions\openssl-1.0.0d\include;D:\bbr3\server\gaga\lib\raknet\DependentExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>LIBCD.lib LIBCMTD.lib MSVCRT.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/bbr3/server/gaga -BD:/bbr3/server/gaga/build --check-stamp-file D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/bbr3/server/gaga -BD:/bbr3/server/gaga/build --check-stamp-file D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/bbr3/server/gaga -BD:/bbr3/server/gaga/build --check-stamp-file D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/bbr3/server/gaga -BD:/bbr3/server/gaga/build --check-stamp-file D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/bbr3/server/gaga/lib/raknet/Lib/LibStatic/CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\bbr3\server\gaga\build\lib\raknet\Lib\LibStatic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\AutopatcherPatchContext.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\AutopatcherRepositoryInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Base64Encoder.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\BitStream.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CCRakNetSlidingWindow.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CCRakNetUDT.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CheckSum.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CloudClient.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CloudCommon.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CloudServer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\CommandParserInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ConnectionGraph2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ConsoleServer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DR_SHA1.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_BPlusTree.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_BinarySearchTree.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_BytePool.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_ByteQueue.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Hash.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Heap.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_HuffmanEncodingTree.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_HuffmanEncodingTreeFactory.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_HuffmanEncodingTreeNode.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_LinkedList.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_List.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Map.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_MemoryPool.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Multilist.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_OrderedChannelHeap.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_OrderedList.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Queue.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_QueueLinkedList.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_RangeList.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Table.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_ThreadsafeAllocatingQueue.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Tree.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_WeightedGraph.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DataCompressor.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DirectoryDeltaTransfer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\DynDNS.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\EmailSender.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\EmptyHeader.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\EpochTimeToString.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Export.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FileList.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FileListNodeContext.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FileListTransfer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FileListTransferCBInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FileOperations.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FormatString.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\FullyConnectedMesh2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\GetTime.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Getche.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Gets.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\GridSectorizer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\HTTPConnection.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\HTTPConnection2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\IncrementalReadInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\InternalPacket.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Itoa.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Kbhit.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\LinuxStrings.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\LocklessTypes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\LogCommandParser.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\MTUSize.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\MessageFilter.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\MessageIdentifiers.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NatPunchthroughClient.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NatPunchthroughServer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NatTypeDetectionClient.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NatTypeDetectionCommon.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NatTypeDetectionServer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NativeFeatureIncludes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NativeFeatureIncludesOverrides.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NativeTypes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NetworkIDManager.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\NetworkIDObject.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PS3Includes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PS4Includes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketConsoleLogger.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketFileLogger.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketLogger.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketOutputWindowLogger.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketPool.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketPriority.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketizedTCP.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\PluginInterface2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RPC4Plugin.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Rackspace.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakAlloca.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakAssert.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakMemoryOverride.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetCommandParser.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetDefines.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetDefinesOverrides.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSmartPtr.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetStatistics.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetTime.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetTransport2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetTypes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetVersion.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakPeer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakPeerInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakSleep.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakString.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakThread.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RakWString.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Rand.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RandSync.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ReadyEvent.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RefCountedObj.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\RelayPlugin.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ReliabilityLayer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ReplicaEnums.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ReplicaManager3.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\Router2.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SecureHandshake.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SendToThread.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SignaledEvent.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SimpleMutex.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SimpleTCPServer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SingleProducerConsumer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SocketDefines.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SocketIncludes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SocketLayer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\StatisticsHistory.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\StringCompressor.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\StringTable.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\SuperFastHash.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TCPInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TableSerializer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TeamBalancer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TeamManager.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TelnetTransport.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ThreadPool.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\ThreadsafePacketLogger.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TransportInterface.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\TwoWayAuthentication.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPForwarder.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyClient.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyCommon.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyCoordinator.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyServer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\VariableDeltaSerializer.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\VariableListDeltaTracker.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\VariadicSQLParser.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\VitaIncludes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\WSAStartupSingleton.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\WindowsIncludes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\XBox360Includes.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\_FindFirst.h" />
+    <ClInclude Include="D:\bbr3\server\gaga\lib\raknet\Source\gettimeofday.h" />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Base64Encoder.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\BitStream.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CCRakNetSlidingWindow.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CCRakNetUDT.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CheckSum.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CloudClient.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CloudCommon.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CloudServer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\CommandParserInterface.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\ConnectionGraph2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\ConsoleServer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DR_SHA1.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_BytePool.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_ByteQueue.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_HuffmanEncodingTree.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DS_Table.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DataCompressor.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DirectoryDeltaTransfer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\DynDNS.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\EmailSender.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\EpochTimeToString.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\FileList.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\FileListTransfer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\FileOperations.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\FormatString.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\FullyConnectedMesh2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\GetTime.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Getche.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Gets.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\GridSectorizer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\HTTPConnection.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\HTTPConnection2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\IncrementalReadInterface.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Itoa.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\LinuxStrings.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\LocklessTypes.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\LogCommandParser.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\MessageFilter.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NatPunchthroughClient.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NatPunchthroughServer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NatTypeDetectionClient.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NatTypeDetectionCommon.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NatTypeDetectionServer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NetworkIDManager.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\NetworkIDObject.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PS4Includes.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketConsoleLogger.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketFileLogger.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketLogger.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketOutputWindowLogger.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PacketizedTCP.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\PluginInterface2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RPC4Plugin.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Rackspace.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakMemoryOverride.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetCommandParser.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_360_720.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_Berkley.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_Berkley_NativeClient.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_NativeClient.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_PS3_PS4.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_PS4.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_Vita.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_WindowsStore8.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_Windows_Linux.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetSocket2_Windows_Linux_360.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetStatistics.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetTransport2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakNetTypes.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakPeer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakSleep.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakString.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakThread.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RakWString.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Rand.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RandSync.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\ReadyEvent.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\RelayPlugin.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\ReliabilityLayer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\ReplicaManager3.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\Router2.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\SecureHandshake.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\SendToThread.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\SignaledEvent.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\SimpleMutex.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\SocketLayer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\StatisticsHistory.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\StringCompressor.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\StringTable.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\SuperFastHash.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\TCPInterface.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\TableSerializer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\TeamBalancer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\TeamManager.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\TelnetTransport.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\ThreadsafePacketLogger.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\TwoWayAuthentication.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPForwarder.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyClient.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyCoordinator.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\UDPProxyServer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\VariableDeltaSerializer.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\VariableListDeltaTracker.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\VariadicSQLParser.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\VitaIncludes.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\WSAStartupSingleton.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\_FindFirst.cpp"  />
+    <ClCompile Include="D:\bbr3\server\gaga\lib\raknet\Source\gettimeofday.cpp"  />
+    <None Include="D:\bbr3\server\gaga\lib\raknet\Lib\LibStatic\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/bbr3/server/gaga/build/ZERO_CHECK.vcxproj">
+      <Project>96BD4DFF-D089-3F85-919D-2908F090C83F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
